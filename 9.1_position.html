@@ -11,21 +11,32 @@
             height: 100px;
             background: darkcyan;
             margin: 50px;
-            position: relative;
+            position: unset;
             }
+        #title{
+            position: relative;
+            background-color: wheat;
+            font-size: 20px;
+        }
         #inner {
             width: 50px;
             height: 50px;
             background: lightgreen;
-            position: absolute;
+            position: relative;
             top: 10px;
         }
+
+
     </style>
 </head>
 <body>
-    <div id="outer">
-        <div id="inner"></div>
-    </div>
+    <body>
+        <div id="outer">
+            <div id="title">Box title
+               <div id="inner"></div>
+            </div> 
+        </div>
+       </body>
     <!-- explanation 
     the parent element wasnt set to relative so the inner class wont respond to the parent element when not set to relative
     -->
