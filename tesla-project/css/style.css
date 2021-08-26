@@ -1,0 +1,262 @@
+@font-face {
+    font-family: myGothamFont;
+    src: url(../font/1746-font.woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    /* overflow: hidden; */
+    scroll
+}
+/* 56.8  */
+h1,h2,h3{
+    padding: 2vw 2vh;
+    margin: 2vw 2vh;
+}
+/* for all */
+.clr{
+    clear: both;
+}
+.btn{
+    color: #EEEEF0;
+    background: transparent;
+    border-radius: 10px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+a{
+    text-decoration: none;
+}
+.btn:hover{
+    background: #3a4153;
+}
+#project{
+    font-family: myGothamFont;
+}
+.container{
+    height: 100vh;
+}
+#first-page{
+    background: url('/tesla-project/tesla-img/model3-car.jfif') no-repeat center center/cover;
+}
+
+/* private */
+header{
+    position: sticky;
+    top: 0;
+    padding: 0vh;
+    padding-left: 54px;
+    width: 100%;
+}
+.tesla-icon{
+    padding-top: 20px;
+    float: left;
+    width:145px;
+    height: 100%;
+    
+}
+.top-nav ul li{
+    display: inline-block;
+}
+
+.top-nav{
+    padding-top:18px;
+    padding-bottom:18px;
+    display: inline-block;
+    margin:0 auto;
+    margin-left: 18%;
+}
+.top-nav ul{
+    list-style-type: none;
+}
+.top-nav ul li a{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-right: 0;
+}
+.side-nav{
+    padding-top:18px;
+    padding-bottom:18px;
+    float: right;
+    display: inline-block;
+}
+.side-nav ul{
+    list-style-type: none;
+}
+.side-nav ul li{
+    display: inline-block;
+        
+}
+.side-nav ul li a{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.model3{
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    margin-top: -25px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+}
+.model3 h3{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.side-bar{
+    padding-left: 10px;
+    position: fixed;
+    height: 100vh;
+    margin: 30vh 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.side-bar ul{
+    list-style-type: none;    
+}
+.side-bar li{
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+.side-bar a{ 
+    font-size: 20px;
+    color: white;
+
+}
+.side-bar a span{
+
+}
+.side-bar a:hover .side-bar a span{
+    color:white;
+}
+#current{
+    font-size: 20px;
+    font-weight: 999;
+}
+.current-text{
+    padding-left: 5px;
+    font-size: 12px;
+    color: transparent;
+}
+.side-bar-link:hover  .current-text{
+    cursor: pointer;
+    color: rgb(182, 179, 179);
+}
+.blankspace{    
+    height: 430px;
+}
+footer{
+    text-align: center;
+}
+
+.zero-to-hundered{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    color:white;
+}
+.speedo-meter{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.zero-to-hundered .seconds{
+    display: inline-block;
+    font-size: 32px;
+    line-height: 36px;
+    color: white;
+    position: absolute;
+    top: 25%;
+    margin-left: 8px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.miles{
+    position: relative;
+    width: 10%;
+}
+.footer-element{
+    display: inline-block;
+    color: white;
+    margin-top: 0;
+    width: 15%;
+    text-align: center;
+}
+.miles .miles353{
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.zero-to-hundered p{
+    margin-left: 15%;
+}
+.footer-p{
+    font-size: 10px;
+    margin-top: 8px;
+}
+.awd .awd-p{
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    line-height: 36px;
+}
+.order-now{
+    display: inline-block;
+}
+.order-now-btn{
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    padding:7px 34px;
+    border: 3px solid white;
+    position: relative;
+    top: -25px;
+    margin-left: 20px;
+}
+.order-now-btn:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.awd{
+    width: 8%;
+}
+.arrow{
+    color: white;
+    font-size: 25px;
+
+}
+.arrow-div{
+    margin-top: 20px;
+}
+#second-page{
+    background: url(/img/2824cfa9f620cdf152b5ed57505a4162.jpg);
+}
+.chat{
+    background: white;
+    border-radius: 50%;
+    padding: 10px 13px;
+    padding-top: 13px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    border: 0px;
+}
