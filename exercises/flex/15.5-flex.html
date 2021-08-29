@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{margin:0;padding: 0;}
+        .container{
+            display: flex;
+            background: cornflowerblue;
+            justify-content: space-between;
+            height: 8vh;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            list-style-type: none; 
+            justify-content: space-between;
+            width: 25vw;
+            margin-right: 3rem;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 0.9rem 0.9rem;
+        }
+        ul li a:hover{
+            background: peachpuff;
+        }
+        @media (max-width:768px){
+            .container{
+                text-align: center;
+                display: unset;
+            }
+            ul{
+                flex-direction: column;
+                width: 100vw;
+            }
+            ul li{  
+                background: chocolate;
+                width: 100%;
+            }
+            ul li a{
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>APPLESEEDS</h2>
+        <ul>    
+            <li><a href="#" class="btn">home</a></li>
+            <li><a href="#" class="btn">about</a></li>
+            <li><a href="#" class="btn">protfolio</a></li>
+            <li><a href="#" class="btn">contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
