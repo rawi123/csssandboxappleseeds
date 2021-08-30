@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targted selectors</title>
+    <style>
+        div > p{
+            background:red;
+        }
+        div + p{
+            background: blue;
+        }
+        a[target="_blank"]{
+            background:green;
+        }
+        input[type="text"], input[type="email"]{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        
+        <ul>
+            <li>item 1</li>
+            <li><p>item 2</p></li>
+            <li>item 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#">page 1</a>
+    <a href="#" target="_self">page 2</a>
+    <a href="www.google.come" target="_blank">google </a>
+    <br><br>
+    <form action="">
+        <input type="text" placeholder="NAME">
+        <input type="email" placeholder="EMAIL">
+        <input type="submit" placeholder="submit">
+    </form>
+
+</body>
+</html>

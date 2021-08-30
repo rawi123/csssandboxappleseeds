@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+            color: #fff;
+            margin: 0;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        header:before{
+            content:'';
+            background: url(https://source.unsplash.com/1600x900/?nature,water) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        header > h1{
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, molestias.</p>
+    </header>
+    <section>
+        <h2>haha</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur ad, quasi pariatur animi molestiae ipsa corrupti nisi veniam recusandae sit eum maxime fugiat necessitatibus totam facilis commodi doloremque ratione.</p>
+    </section>
+</body>
+</html>

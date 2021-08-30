@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17.1 pseudo</title>
+    <style>
+        body > a{
+            text-decoration: none;
+        }
+        body >a:before{
+            content:"please visit this ";
+            color: black;
+        }
+        body >a:after{
+            content:" for more information";
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://moo.appleseeds.org.il/">website ("www.appleseeds.org.il/")</a>
+</body>
+</html>
