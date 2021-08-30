@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .world-class >p{
+            width:50%;
+            display: inline-block;
+        }
+        .world-class{
+            text-align: center;
+        }
+        .divtool{
+            color: purple;
+            position: relative;
+        }
+        .divtool::before{
+            position: absolute;
+            content:"this is a baddddd asss divtool";
+            background-color: yellow;
+            top: -20px;
+            left: -20px;
+            z-index: 1;
+            opacity: 0;
+            border-radius: 10px;
+            padding: 0 0.2rem;
+            width:250px;
+        }
+        .divtool::after{
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            transform: rotate(45deg) ;
+            opacity: 0;
+            top: -7px;
+            left: 5px;
+        }
+        .divtool:hover::after, .divtool:hover::before{
+            animation: animate 1s ;
+        }
+        @keyframes animate{
+            to{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+        <div class="world-class">
+            <p>Lorem ipsum dolor sit <span class="divtool"> rawi </span> amet consectetur adipisicing elit. Ut consequatur porro et dolor numquam soluta, ullam tempore quidem totam praesentium ad, quis architecto eaque? Ab nulla doloribus recusandae sint voluptate?</p>
+            <p><span class="divtool">Lorem.</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quidem. Beatae, eos, saepe esse <span class="divtool"> hic</span> asperiores, consectetur officia veniam aliquam illum placeat tempore earum! Tenetur error nam voluptas id eveniet?</p>
+        </div>
+</body>
+</html>
